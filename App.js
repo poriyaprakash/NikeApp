@@ -1,12 +1,14 @@
 //import liraries
 import React from 'react';
-import { View, Text, StyleSheet, } from 'react-native';
+import { View, Text, StyleSheet, StatusBar, } from 'react-native';
 import ProductScreen from './src/Screens/ProductScreen';
+import ProductDetailsScreen from './src/Screens/ProductDetailsScreen';
 // create a component
 const App = () => {
   return (
     <View style={styles.container}>
-      <ProductScreen/>
+      <ProductDetailsScreen/>
+      <StatusBar style='auto' />
     </View>
   );
 };
@@ -15,8 +17,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // backgroundColor: 'white'
   },
 });
 
