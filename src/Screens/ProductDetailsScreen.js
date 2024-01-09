@@ -3,7 +3,7 @@ import products from "../data/products";
 
 const ProductDetailsScreen = () => {
     const {height,width} = useWindowDimensions();
-    const product = products[0];
+    const product = products[1];
     const addToCart=()=>{
         console.warn("add to cart");
     }
