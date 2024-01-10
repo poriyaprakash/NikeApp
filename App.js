@@ -1,15 +1,11 @@
-//import liraries
 import React from 'react';
 import { View, Text, StyleSheet, StatusBar, } from 'react-native';
-import ProductScreen from './src/Screens/ProductScreen';
-import ProductDetailsScreen from './src/Screens/ProductDetailsScreen';
-import ShoppingCart from './src/Screens/ShoppingCart';
-// create a component
+import Navigation from './src/navigation';
+
 const App = () => {
   return (
     <View style={styles.container}>
-      <ShoppingCart/>
-      {/* <ProductDetailsScreen/> */}
+      <Navigation/>
       <StatusBar style='auto' />
     </View>
   );

@@ -3,7 +3,7 @@ import products from "../data/products";
 
 const ProductDetailsScreen = () => {
     const {height,width} = useWindowDimensions();
-    const product = products[1];
+    const product = products[0];
     const addToCart=()=>{
         console.warn("add to cart");
     }
@@ -15,7 +15,7 @@ const ProductDetailsScreen = () => {
                 <Image source={{uri: item}} style={{width , aspectRatio:1}}/>
             )} 
             horizontal
-            showsHorizontalScrollIndicator={true}
+            // showsHorizontalScrollIndicator={true}
             pagingEnabled
             />
             <View style={{padding:20}}>
