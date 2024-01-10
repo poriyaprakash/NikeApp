@@ -20,7 +20,7 @@ const Navigation = () => {
                         </Pressable>)
                     })}
                 />
-                <Stack.Screen name="ProductDetails" component={ProductDetailsScreen} />
+                <Stack.Screen name="ProductDetails" component={ProductDetailsScreen} options={{presentation: 'modal'}}/>
                 <Stack.Screen name="Cart" component={ShoppingCart} />
             </Stack.Navigator>
         </NavigationContainer>
